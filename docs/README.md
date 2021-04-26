@@ -10,5 +10,5 @@ features:
   details: 当然，想到的某些解决/实现方案也会在这里，因为不是抄的，就会觉得我真是太牛了
 - title: 懒更新
   details: 想起来的时候会更新，会尽量想起来
-footer: MIT Licensed | Copyright © 2018-present Evan You
+footer: 见字如面
 ---
