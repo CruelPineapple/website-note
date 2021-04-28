@@ -2,7 +2,7 @@
 home: true
 heroImage: /logo.png
 actionText: 出走 →
-actionLink: /zh/guide/
+actionLink: /Fe/
 features:
 - title: 笔记
   details: 这里储存着coding笔记，比如跳过的坑或者一些心得等等，几经查询学到的东西也会记录一下
