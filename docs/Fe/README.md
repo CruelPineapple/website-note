@@ -6,4 +6,5 @@
 Gitpage是hexo搭的，倒是挺方便，不过有了自己的服务器还是希望搭一个更customize的笔记本。  
 ### Vuepress感想
 感觉Vuepress熟了之后也挺方便的，就是config内容需要学习一下，而且比较适合阅读。
-
+### 本项目地址
+[Go→](https://github.com/CruelPineapple/website-note)
