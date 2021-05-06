@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/note/',
     title: 'Rice Shower',
     description: '一马当先，万马无光',
     themeConfig:{
