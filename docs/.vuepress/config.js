@@ -17,6 +17,7 @@ module.exports = {
         nav:[
             {text:'Fe',link:'/Fe/'},
             {text: 'Pretty Derby',link:'/derby/'},
+            {text:  'Algo', link:'/lc/'},
             {text:'GitHub',link:'https://github.com/CruelPineapple'}         
         ]
     }
