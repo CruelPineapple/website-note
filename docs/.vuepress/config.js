@@ -14,7 +14,10 @@ module.exports = {
       },
       {
         title: "小程序",
-        children: ['/Fe/使用Array.unshift.md'],
+        children: [
+            '/Fe/使用Array.unshift.md',
+            '/minip/关于setdata'
+        ],
       },
       {
           title:"力扣笔记",
