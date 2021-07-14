@@ -1,8 +1,6 @@
 # Pretty Derby!
 ### 如你所见，我是一个赛马娘玩家
 
-![info icon](../public/Screenshot_20210518-174723.jpg)
-
 ***
 
 id是 **916987956**
