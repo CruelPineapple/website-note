@@ -6,7 +6,10 @@ module.exports = {
     sidebar: [
       {
         title: "Vue",
-        children: ["/Fe/关于mounted的bug"],
+        children: [
+            "/Fe/关于mounted的bug",
+            "/Fe/element事件绑定"
+        ],
       },
       {
         title: "红宝书笔记",
