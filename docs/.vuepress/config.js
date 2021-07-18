@@ -13,7 +13,9 @@ module.exports = {
       },
       {
         title: "红宝书笔记",
-        children: ["/Fe/parseInt.md"],
+        children: [
+            "/Fe/parseInt.md"
+        ],
       },
       {
         title: "小程序",
