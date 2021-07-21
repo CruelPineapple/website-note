@@ -15,7 +15,8 @@ module.exports = {
         title: "红宝书笔记",
         children: [
             "/Fe/Number",
-            "/Fe/parseInt.md"
+            "/Fe/parseInt.md",
+            "/Fe/String"
         ],
       },
       {
