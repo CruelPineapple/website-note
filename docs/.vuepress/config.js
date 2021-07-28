@@ -8,7 +8,8 @@ module.exports = {
         title: "Vue",
         children: [
             "/Fe/关于mounted的bug",
-            "/Fe/element事件绑定"
+            "/Fe/element事件绑定",
+            "/Fe/分页展示"
         ],
       },
       {
