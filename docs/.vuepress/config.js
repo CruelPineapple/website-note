@@ -17,7 +17,8 @@ module.exports = {
         children: [
             "/Fe/Number",
             "/Fe/parseInt.md",
-            "/Fe/String"
+            "/Fe/String",
+            "/Fe/apply和参数"
         ],
       },
       {
