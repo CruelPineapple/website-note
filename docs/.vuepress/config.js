@@ -18,7 +18,8 @@ module.exports = {
             "/Fe/Number",
             "/Fe/parseInt.md",
             "/Fe/String",
-            "/Fe/apply和参数"
+            "/Fe/apply和参数",
+            "/Fe/Array"
         ],
       },
       {
