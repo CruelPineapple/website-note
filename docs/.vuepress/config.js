@@ -19,7 +19,8 @@ module.exports = {
             "/Fe/parseInt.md",
             "/Fe/String",
             "/Fe/apply和参数",
-            "/Fe/Array"
+            "/Fe/Array",
+            "/Fe/RegExp"
         ],
       },
       {
