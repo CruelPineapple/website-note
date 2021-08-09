@@ -20,7 +20,8 @@ module.exports = {
             "/Fe/String",
             "/Fe/apply和参数",
             "/Fe/Array",
-            "/Fe/RegExp"
+            "/Fe/RegExp",
+            "/Fe/Function"
         ],
       },
       {
