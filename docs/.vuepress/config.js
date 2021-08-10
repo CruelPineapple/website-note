@@ -21,7 +21,8 @@ module.exports = {
             "/Fe/apply和参数",
             "/Fe/Array",
             "/Fe/RegExp",
-            "/Fe/Function"
+            "/Fe/Function",
+            "/Fe/基本包装类型"
         ],
       },
       {
