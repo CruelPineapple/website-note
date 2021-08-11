@@ -22,7 +22,8 @@ module.exports = {
             "/Fe/Array",
             "/Fe/RegExp",
             "/Fe/Function",
-            "/Fe/基本包装类型"
+            "/Fe/基本包装类型",
+            "/Fe/单体内置对象"
         ],
       },
       {
