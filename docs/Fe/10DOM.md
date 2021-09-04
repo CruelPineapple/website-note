@@ -11,4 +11,28 @@ cloneNode可以复制节点，参数可以指定深复制（复制节点和它�
 document.documentElement可以取得html元素，也可以使用document.childNodes[ 0 ]或者document.firstChild。document还有body属性，直接指向body元素，doctype属性指向doctype元素。
 document包含文档信息，title，URL，domain。由于跨域安全限制，有时候一个页面会拥有来自其他子域的框架，这时候将domain设置为相同可以让页面的js能互相访问。
 ## 查找元素
-通过id和tagname查找
+通过id和tagname查找。还可直接访问document.anchors获得所有带name的a标签，document.images获得所有img元素，document.links获得所有带href的a标签等等
+## elememt类型
+每个元素都有特性，如id，className，title等等，在元素对象上直接访问这些属性即可，也可以通过getAttribute，setAttribute，removeAttribute进行操作
+## text类型
+纯纯的文本节点，就是文字的部分。一般情况，每个元素只有一个文本子节点：
+```
+var element = document.createElement("div");
+element.className = "message";
+
+var textNode = document.createTextNode("Hello world");
+element.appendCHild(textNode);
+
+document.body.appendChild(element);
+```
+此例创建了一个新dov，指定了class，创建了一个文本节点，将其添加到前面创建的元素中，最后将div添加到body。有助于理解文本节点。
+normalize方法，能够合并相邻的文本节点。相反，splitText可以将一个文本节点分成两个
+## DOM扩展
+querySelector方法接收一个css选择符，返回与该选择符匹配的第一个元素，querySelectorAll方法则会返回匹配的所有元素
+```
+var myDiv = document.querySelector("#myDiv");
+```
+## H5新增
+getElementByClassName,不多说，返回符合类名的NodeList，可以传入多个类名。
+classList属性，操作类名的时候，原本需要做字符串切割，但是h5新增的这个属性拥有add，contains，remove，toggle方法，用于增删以及反转类名等操作
+焦点管理，focus方法可以聚焦到该元素，document.hasFocus可以确定文档是否获取到焦点，document.activeElement记录了当前活动元素
