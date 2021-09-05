@@ -36,3 +36,8 @@ var myDiv = document.querySelector("#myDiv");
 getElementByClassName,不多说，返回符合类名的NodeList，可以传入多个类名。
 classList属性，操作类名的时候，原本需要做字符串切割，但是h5新增的这个属性拥有add，contains，remove，toggle方法，用于增删以及反转类名等操作
 焦点管理，focus方法可以聚焦到该元素，document.hasFocus可以确定文档是否获取到焦点，document.activeElement记录了当前活动元素
+innerHTML，该属性以字符串形式保存节点拥有的DOM树，修改时，传入字符串的标签也会被解析为DOM元素。需要注意，传入此属性的内容需要仔细检查
+outerHTML，包括调用元素在内的DOM树
+大量插入时，innerHTML比多次创建节点更快速，当然，需要一次性调整innerHTML的内容
+## innerText
+被h5抛弃的属性，与innerHTML类似，但是只生成一个文本子节点
