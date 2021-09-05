@@ -35,7 +35,8 @@ module.exports = {
             "/Fe/7函数表达式/私有变量",
             "/Fe/8BOM",
             "/Fe/9客户端检测",
-            "/Fe/10DOM"
+            "/Fe/10DOM",
+            "/Fe/11DOM2和DOM3"
         ],
       },
       {
