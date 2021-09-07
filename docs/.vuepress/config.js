@@ -36,7 +36,9 @@ module.exports = {
             "/Fe/8BOM",
             "/Fe/9客户端检测",
             "/Fe/10DOM",
-            "/Fe/11DOM2和DOM3"
+            "/Fe/11DOM2和DOM3",
+            "/Fe/13事件",
+            "/Fe/14表单脚本"
         ],
       },
       {
