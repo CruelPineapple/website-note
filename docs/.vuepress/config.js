@@ -40,7 +40,8 @@ module.exports = {
             "/Fe/13事件",
             "/Fe/14表单脚本",
             "/Fe/17错误处理",
-            "/Fe/20JSON"
+            "/Fe/20JSON",
+            "/Fe/21AJAX"
         ],
       },
       {
