@@ -41,7 +41,8 @@ module.exports = {
             "/Fe/14表单脚本",
             "/Fe/17错误处理",
             "/Fe/20JSON",
-            "/Fe/21AJAX"
+            "/Fe/21AJAX",
+            "/Fe/22高级技巧"
         ],
       },
       {
