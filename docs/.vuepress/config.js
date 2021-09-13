@@ -5,14 +5,6 @@ module.exports = {
   themeConfig: {
     sidebar: [
       {
-        title: "Vue",
-        children: [
-            "/Fe/关于mounted的bug",
-            "/Fe/element事件绑定",
-            "/Fe/分页展示"
-        ],
-      },
-      {
         title: "红宝书笔记",
         children: [
             "/Fe/红宝书/Number",
@@ -44,6 +36,20 @@ module.exports = {
             "/Fe/红宝书/21AJAX",
             "/Fe/红宝书/22高级技巧",
             "/Fe/红宝书/22高级技巧2"
+        ],
+      },
+      {
+        title: "React",
+        children: [
+          "/Fe/react/类"
+        ]
+      },
+      {
+        title: "Vue",
+        children: [
+            "/Fe/关于mounted的bug",
+            "/Fe/element事件绑定",
+            "/Fe/分页展示"
         ],
       },
       {
