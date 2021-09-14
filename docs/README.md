@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: /logo.png
-actionText: 出走 →
+heroImage: /logo.jpg
+actionText: remake →
 actionLink: /Fe/
 features:
 - title: 笔记
