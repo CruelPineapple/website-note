@@ -41,7 +41,8 @@ module.exports = {
       {
         title: "React",
         children: [
-          "/Fe/react/类"
+          "/Fe/react/类",
+          "/Fe/react/Symbol"
         ]
       },
       {
