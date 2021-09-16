@@ -13,3 +13,14 @@
 null和undefined没有此方法  
 可以指定基数，转换为该进制表示数值的字符串  
 如果不知道要转换的内容是不是null或undefined，可以使用String()，对此两者将返回“null”和“undefined”，如果该内容具有toString方法，则返回其值。
+
+## 方法
+
+可以在字符串上直接使用方法，例如：
+
+```js
+"hello".charAt(0); // "h"
+"hello, world".replace("world", "mars"); // "hello, mars"
+"hello".toUpperCase(); // "HELLO"
+```
+
