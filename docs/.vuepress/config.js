@@ -1,7 +1,7 @@
 module.exports = {
   base: "/note/",
-  title: "嘉心糖",
-  description: "好好吃饭",
+  title: "一个云鬼",
+  description: "我悲痛欲绝，跳进了家门口的井里",
   themeConfig: {
     sidebar: [
       {
@@ -62,8 +62,11 @@ module.exports = {
         ],
       },
       {
-          title:"力扣笔记",
-          children:['/lc/雪糕']
+          title:"题",
+          children:[
+            '/lc/雪糕',
+            '/lc/周期执行函数'
+          ]
       }
     ],
     nav: [
