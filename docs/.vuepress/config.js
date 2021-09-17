@@ -43,7 +43,7 @@ module.exports = {
         children: [
           "/Fe/react/类",
           "/Fe/react/Symbol",
-          "Fe/react/for"
+          "/Fe/react/for"
         ]
       },
       {
@@ -51,6 +51,7 @@ module.exports = {
         children: [
             "/Fe/vue/计算属性和侦听器",
             "/Fe/vue/proxy",
+            "/Fe/vue/生命周期",
             "/Fe/vue/关于mounted的bug",
             "/Fe/vue/element事件绑定",
             "/Fe/vue/分页展示"
