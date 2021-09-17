@@ -50,6 +50,7 @@ module.exports = {
         title: "Vue",
         children: [
             "/Fe/vue/计算属性和侦听器",
+            "/Fe/vue/proxy",
             "/Fe/vue/关于mounted的bug",
             "/Fe/vue/element事件绑定",
             "/Fe/vue/分页展示"
