@@ -34,3 +34,6 @@ for(var key of Object.keys(student)){
 }
 ```
 
+### forEach
+
+这个只能用于数组遍历，而且不能中途停下来
