@@ -67,8 +67,9 @@ module.exports = {
       {
           title:"题",
           children:[
-            '/lc/雪糕',
-            '/lc/周期执行函数'
+            '/lc/排序',
+            '/lc/周期执行函数',
+            '/lc/URL拆解'
           ]
       }
     ],
