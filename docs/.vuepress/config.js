@@ -70,7 +70,8 @@ module.exports = {
             '/lc/排序',
             '/lc/周期执行函数',
             '/lc/URL拆解',
-            '/lc/HTTPheader'
+            '/lc/HTTPheader',
+            '/lc/数组转树'
           ]
       }
     ],
