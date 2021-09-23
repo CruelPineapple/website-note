@@ -71,7 +71,8 @@ module.exports = {
             '/lc/周期执行函数',
             '/lc/URL拆解',
             '/lc/HTTPheader',
-            '/lc/数组转树'
+            '/lc/数组转树',
+            '/lc/数组扁平化'
           ]
       }
     ],
