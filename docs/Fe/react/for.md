@@ -36,4 +36,4 @@ for(var key of Object.keys(student)){
 
 ### forEach
 
-这个只能用于数组遍历，而且不能中途停下来
+这个只能用于数组遍历，而且不能中途停下来。它接收的是处理函数和绑定的this
