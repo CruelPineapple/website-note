@@ -77,7 +77,7 @@ getJSON('/post/1.json').then(function(post) {
 
 ## Promise.all
 
-将多个promise实例包装成一个新的promise实例，内部所有成员fulfilled，外部实例的状态才会变为fulfilled，只要内部有一个reject，外部实例就是reject状态，此时第一个reject的内部成员的返回值会传给外部实例的回调。
+将多个promise实例包装成一个新的promise实例，内部所有成员fulfilled，外部实例的状态才会变为fulfilled，此时外部实例的回调参数会接收到一个数组，里面是内部的resolved值。只要内部有一个reject，外部实例就是reject状态，此时第一个reject的内部成员的返回值会传给外部实例的回调。
 
 ## Promise.race
 
