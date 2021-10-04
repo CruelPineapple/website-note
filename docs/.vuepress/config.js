@@ -80,7 +80,8 @@ module.exports = {
             '/lc/URL拆解',
             '/lc/HTTPheader',
             '/lc/数组转树',
-            '/lc/数组扁平化'
+            '/lc/数组扁平化',
+            '/le/深浅拷贝'
           ]
       }
     ],
