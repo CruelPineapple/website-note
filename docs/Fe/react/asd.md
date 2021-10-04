@@ -2,7 +2,7 @@
 
 我的react练习项目，前端react，后端node，展示asoul成员哔哩哔哩粉丝信息。
 
-这里记录该项目的学习内容
+这里记录该项目的学习内容，复习的时候，希望可以参阅[开发日志](https://github.com/CruelPineapple/A-SOUL-Digits/blob/master/README.md)
 
 ## img
 
