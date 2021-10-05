@@ -81,7 +81,8 @@ module.exports = {
             '/lc/HTTPheader',
             '/lc/数组转树',
             '/lc/数组扁平化',
-            '/le/深浅拷贝'
+            '/lc/深浅拷贝',
+            '/lc/bind和new'
           ]
       }
     ],
