@@ -82,7 +82,9 @@ module.exports = {
             '/lc/数组转树',
             '/lc/数组扁平化',
             '/lc/深浅拷贝',
-            '/lc/bind和new'
+            '/lc/bind和new',
+            '/lc/instanceof',
+            '/lc/promiseAll'
           ]
       }
     ],
