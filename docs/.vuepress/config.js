@@ -84,7 +84,8 @@ module.exports = {
             '/lc/深浅拷贝',
             '/lc/bind和new',
             '/lc/instanceof',
-            '/lc/promiseAll'
+            '/lc/promiseAll',
+            '/lc/防抖节流'
           ]
       }
     ],
