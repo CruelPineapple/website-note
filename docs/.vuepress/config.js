@@ -77,7 +77,9 @@ module.exports = {
         children: [
           '/Fe/不js/函数作用域',
           '/Fe/不js/块作用域',
-          '/Fe/不js/提升'
+          '/Fe/不js/提升',
+          '/Fe/不js/闭包',
+          '/Fe/不js/模块'
         ]
       },
       {
@@ -93,7 +95,8 @@ module.exports = {
             '/lc/bind和new',
             '/lc/instanceof',
             '/lc/promiseAll',
-            '/lc/防抖节流'
+            '/lc/防抖节流',
+            '/lc/两数之和'
           ]
       }
     ],
