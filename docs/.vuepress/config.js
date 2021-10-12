@@ -68,7 +68,8 @@ module.exports = {
       {
         title: "基础",
         children: [
-          '/base/tcp拥塞'
+          '/base/tcp拥塞',
+          '/base/34'
         ]
       },
       {
