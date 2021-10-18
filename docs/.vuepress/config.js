@@ -87,7 +87,8 @@ module.exports = {
           '/Fe/不js/块作用域',
           '/Fe/不js/提升',
           '/Fe/不js/闭包',
-          '/Fe/不js/模块'
+          '/Fe/不js/模块',
+          '/Fe/不js/this'
         ]
       },
       {
