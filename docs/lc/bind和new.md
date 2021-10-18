@@ -17,6 +17,21 @@ Function.prototype.myBind = function(){
 
 首先将参数转为数组（后面总结类数组转为数组），然后取得参数第一项作为指定的this引用，最后取得调用myBind的this引用传入返回的函数，调用apply
 
+个人认为可以用扩展运算符实现参数数组化， ~~不一定对~~ 应该是对的：
+
+```js
+function.prototype.myBind = function(){
+  const args = [...arguments]
+  const thisRef = args.shift()
+  const self = this
+  return function(){
+    return self.apply(thisRef, args)
+  }
+}
+```
+
+
+
 ## new
 
 ```js
