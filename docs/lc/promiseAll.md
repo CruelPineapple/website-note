@@ -9,7 +9,7 @@
 ```js
 function promiseAll(promises){
   return new Promise(function(resolve, reject){
-    if (!isArray(promises)){
+    if (!Array.isArray(promises)){
       return reject(new TypeError('arguments must be an array'))
     }
     let resolvedNum = 0
@@ -33,3 +33,5 @@ function promiseAll(promises){
 ```
 
 Promise.resolve的功能就是包装一个东西，不管它是不是promise，如果是就执行它，不是就变成一个resolve原来的值的promise，反正promise.resolve之后，就能部署处理resolve值的函数了
+
+注意循环内部使用了闭包传入每次迭代的i值（如果不用闭包会怎样，经过尝试好像不会怎样，我寻思它也没有闭包在里头，都是直接用的i。不过原答案有闭包那就闭包吧）

@@ -73,3 +73,43 @@ obj1.obj2.foo() // 42
 
 #### 隐式丢失
 
+丢失了隐式绑定的this值从而使用了默认绑定规则的情况
+
+```js
+function foo(){
+  console.log(this.a)
+}
+
+var obj = {
+  a: 2,
+  foo: foo
+}
+var bar = obj.foo
+var a = 'oops, global'
+bar() // oops, global
+```
+
+虽然bar引用了obj.foo，但是实际上它引用的是foo本身。此时bar其实是一个不带修饰的函数调用，应用了默认绑定
+
+```js
+function foo(){
+  console.log(this.a)
+}
+function doFoo(fn){
+  fn()
+}
+
+var obj = {
+  a: 2,
+  foo: foo
+}
+var a = 'global'
+doFoo(obj.foo) // global
+```
+
+参数传递实际上就是一种隐式的赋值，和上面的例子类似的。这种是更常见的回调函数丢失this绑定
+
+### 显式绑定
+
+使用call和apply强制一个函数使用指定的this，部分方法带有的上下文参数同样是这个效果
+
