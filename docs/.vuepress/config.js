@@ -70,7 +70,8 @@ module.exports = {
         children: [
           '/base/tcp拥塞',
           '/base/34',
-          '/base/http'
+          '/base/http',
+          '/base/http缓存'
         ]
       },
       {
