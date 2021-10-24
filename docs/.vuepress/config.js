@@ -71,7 +71,9 @@ module.exports = {
           '/base/tcp拥塞',
           '/base/34',
           '/base/http',
-          '/base/http缓存'
+          '/base/http缓存',
+          '/base/url',
+          '/base/get和post'
         ]
       },
       {
