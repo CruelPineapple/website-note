@@ -73,7 +73,8 @@ module.exports = {
           '/base/http',
           '/base/http缓存',
           '/base/url',
-          '/base/get和post'
+          '/base/get和post',
+          '/base/跨域'
         ]
       },
       {
