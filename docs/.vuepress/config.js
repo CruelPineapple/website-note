@@ -78,13 +78,6 @@ module.exports = {
         ]
       },
       {
-        title: "小程序",
-        children: [
-            '/Fe/vue/使用Array.unshift.md',
-            '/minip/关于setdata'
-        ],
-      },
-      {
         title: '我不知道的JS',
         children: [
           '/Fe/不js/函数作用域',
@@ -93,6 +86,14 @@ module.exports = {
           '/Fe/不js/闭包',
           '/Fe/不js/模块',
           '/Fe/不js/this'
+        ]
+      },
+      {
+        title:'面试',
+        children:[
+          '/面/自我介绍',
+          '/面/10-28网易1',
+          '/面/10-29哔哩哔哩1',
         ]
       },
       {
@@ -109,9 +110,17 @@ module.exports = {
             '/lc/instanceof',
             '/lc/promiseAll',
             '/lc/防抖节流',
-            '/lc/两数之和'
+            '/lc/两数之和',
+            '/lc/数组乱序'
           ]
-      }
+      },
+      {
+        title: "小程序",
+        children: [
+            '/Fe/vue/使用Array.unshift.md',
+            '/minip/关于setdata'
+        ],
+      },
     ],
     nav: [
       { text: "Note", link: "/Fe/" },
