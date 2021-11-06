@@ -1,4 +1,4 @@
-# 实现Promise.all
+# 实现Promise.all/race
 
 ## Promise.all做了什么
 
@@ -35,3 +35,17 @@ function promiseAll(promises){
 Promise.resolve的功能就是包装一个东西，不管它是不是promise，如果是就执行它，不是就变成一个resolve原来的值的promise，反正promise.resolve之后，就能部署处理resolve值的函数了
 
 注意循环内部使用了闭包传入每次迭代的i值（如果不用闭包会怎样，经过尝试好像不会怎样，我寻思它也没有闭包在里头，都是直接用的i。不过原答案有闭包那就闭包吧）
+
+## Promise.race()
+
+```js
+Promise.myRace = function(promises){
+  return new Promise((resolve, reject)=>{
+    promises.forEach((promise)=>{
+      Promise.resolve(promise).then(resolve, reject)
+    })
+  })
+}
+```
+
+感觉是比较聪明的写法了，promises中的普通值会被resolve成一个resolved的promise对象，这样就能取得它的then了（如果本来就是promise，那resolve相当于啥都没干）

@@ -14,13 +14,7 @@ module.exports = {
             "/Fe/红宝书/Array",
             "/Fe/红宝书/RegExp",
             "/Fe/红宝书/Function",
-            "/Fe/红宝书/map",
-            "/Fe/红宝书/set",
-            "/Fe/红宝书/reflect",
-            "/Fe/红宝书/遍历器",
-            "/Fe/红宝书/生成器",
             "/Fe/红宝书/async",
-            "/Fe/红宝书/promise",
             "/Fe/红宝书/基本包装类型",
             "/Fe/红宝书/单体内置对象",
             "/Fe/红宝书/对象基础",
@@ -46,6 +40,18 @@ module.exports = {
         ],
       },
       {
+        title: 'ES6',
+        children:[
+          '/Fe/es6/map',
+          '/Fe/es6/set',
+          '/Fe/es6/promise',
+          '/Fe/es6/reflect',
+          '/Fe/es6/遍历器',
+          '/Fe/es6/生成器',
+          '/Fe/es6/箭头函数'
+        ]
+      },
+      {
         title: "React",
         children: [
           "/Fe/react/asd",
@@ -60,6 +66,8 @@ module.exports = {
             "/Fe/vue/计算属性和侦听器",
             "/Fe/vue/proxy",
             "/Fe/vue/生命周期",
+            '/Fe/vue/数据可观察',
+            '/Fe/vue/依赖收集',
             "/Fe/vue/关于mounted的bug",
             "/Fe/vue/element事件绑定",
             "/Fe/vue/分页展示"
@@ -85,7 +93,8 @@ module.exports = {
           '/Fe/不js/提升',
           '/Fe/不js/闭包',
           '/Fe/不js/模块',
-          '/Fe/不js/this'
+          '/Fe/不js/this',
+          '/Fe/不js/查询'
         ]
       },
       {
@@ -94,6 +103,8 @@ module.exports = {
           '/面/自我介绍',
           '/面/10-28网易1',
           '/面/10-29哔哩哔哩1',
+          '/面/11-2商汤1',
+          '/面/11-5商汤2'
         ]
       },
       {
