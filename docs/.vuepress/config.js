@@ -126,6 +126,12 @@ module.exports = {
           ]
       },
       {
+        title: '方法',
+        children: [
+          '/Fe/方法/undefined'
+        ]
+      },
+      {
         title: "小程序",
         children: [
             '/Fe/vue/使用Array.unshift.md',
