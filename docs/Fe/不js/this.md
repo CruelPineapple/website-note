@@ -89,7 +89,7 @@ var a = 'oops, global'
 bar() // oops, global
 ```
 
-虽然bar引用了obj.foo，但是实际上它引用的是foo本身。此时bar其实是一个不带修饰的函数调用，应用了默认绑定
+虽然bar引用了obj.foo，但是实际上它引用的是foo本身（因为这里传递的是foo的引用）。此时bar其实是一个不带修饰的函数调用，应用了默认绑定
 
 ```js
 function foo(){
@@ -107,9 +107,50 @@ var a = 'global'
 doFoo(obj.foo) // global
 ```
 
-参数传递实际上就是一种隐式的赋值，和上面的例子类似的。这种是更常见的回调函数丢失this绑定
+参数传递实际上就是一种隐式的赋值，在doFoo内，实际上发生了：
+
+```js
+fn = obj.foo
+fn()
+```
+
+这就和上面的例子类似了，fn实际引用的是foo，fn()也就成了一个不带修饰的引用，应用了默认绑定。这种是更常见的回调函数丢失this绑定，同样也发生在语言内置的函数：
+
+```js
+function foo(){
+  console.log(this.a)
+}
+
+var obj = {
+  a: 2,
+  foo: foo
+}
+
+var a = 'global'
+setTimeout(obj.foo, 100) //global
+```
+
+同样，在实参赋值给形参的时候丢失了this绑定
 
 ### 显式绑定
 
-使用call和apply强制一个函数使用指定的this，部分方法带有的上下文参数同样是这个效果
+使用call和apply强制一个函数使用指定的this，部分方法带有的上下文参数同样是这个效果。但是即使用了显示绑定，隐式丢失仍然存在：
+
+```js
+function foo(){
+  console.log(this.a)
+}
+function doFoo(fn){
+  fn()
+}
+
+var obj = {
+  a: 2,
+  foo: foo
+}
+var a = 'global'
+doFoo.call(obj, obj.foo) // global
+```
+
+
 
