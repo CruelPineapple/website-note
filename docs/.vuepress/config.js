@@ -48,7 +48,8 @@ module.exports = {
           '/Fe/es6/reflect',
           '/Fe/es6/遍历器',
           '/Fe/es6/生成器',
-          '/Fe/es6/箭头函数'
+          '/Fe/es6/箭头函数',
+          '/Fe/es6/手promise'
         ]
       },
       {
@@ -102,6 +103,7 @@ module.exports = {
           '/Fe/不js/闭包',
           '/Fe/不js/模块',
           '/Fe/不js/this',
+          '/Fe/不js/作用域',
           '/Fe/不js/查询'
         ]
       },
@@ -113,7 +115,10 @@ module.exports = {
           '/面/10-28网易1',
           '/面/10-29哔哩哔哩1',
           '/面/11-2商汤1',
-          '/面/11-5商汤2'
+          '/面/11-5商汤2',
+          '/面/11-9商汤3',
+          '/面/11-10哔哩哔哩2',
+          '/面/11-12腾讯1'
         ]
       },
       {
@@ -131,13 +136,21 @@ module.exports = {
             '/lc/promiseAll',
             '/lc/防抖节流',
             '/lc/两数之和',
-            '/lc/数组乱序'
+            '/lc/数组乱序',
+            '/lc/数组去重'
           ]
       },
       {
         title: '方法',
         children: [
           '/Fe/方法/undefined'
+        ]
+      },
+      {
+        title: 'CSS',
+        children:[
+          '/Fe/css/三列布局',
+          '/Fe/css/display'
         ]
       },
       {
