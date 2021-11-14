@@ -108,7 +108,7 @@ p.then((res) => {
 
 ---
 
-原版是这样的（就this变了下）
+原版是这样的，在reject那块儿有不少写错的
 
 ```js
 const PENDING = 'pending';
