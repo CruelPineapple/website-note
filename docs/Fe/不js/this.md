@@ -152,5 +152,136 @@ var a = 'global'
 doFoo.call(obj, obj.foo) // global
 ```
 
+还是那个原因，就算给doFoo绑定了obj作为上下文，doFoo的形参隐式传值的时候还是把this弄丢了，到了foo这儿就又是默认绑定规则，所以这样绑定是8行的。
 
+给foo进行显示的绑定就好了
+
+```js
+function foo(){
+    console.log(this.a)
+}
+
+function doFoo(fn){
+    fn()
+}
+
+var obj = {
+    a: 2,
+    foo: foo
+}
+var a = 'global'
+obj.foo = foo.bind(obj)
+doFoo(obj.foo) // 2
+```
+
+## new绑定
+
+使用new操作时，会执行如下操作
+
+1. 创建一个全新的对象
+2. 对这个对象执行[[原型]]链接（跟现在研究的this没啥关系）
+3. 函数的this会被绑定到新对象
+4. 如果函数没有返回对象，那就会自动返回这个对象
+
+new是最后一种可以影响函数调用时this指向的行为，称为new绑定
+
+## 优先级
+
+这些绑定规则的优先级如下：
+
+new > 显式 > 隐式
+
+判断规则如下：
+
+1. 函数是否被作为构造函数使用？如果是，那么this绑定的是新创建的对象
+2. 函数通过call/apply调用或者进行了硬绑定，那么手动指定的上下文就是this的绑定
+3. 函数在上下文对象中调用（隐式绑定）如var bar = obj.foo() 注意这里，是直接调用了obj.foo，而不是把obj.foo赋值给了bar
+4. 到了这一步就是默认绑定了，this绑定在全局，如果是严格模式那就undefined了
+
+## 例外
+
+如果在call、apply、bind中传入null或者undefined，实际上就会应用默认绑定而不是一个空的上下文。一般在使用apply传入数组参数或是使用bind生成一个柯里化的函数的时候会给上下文参数传入null：
+
+```js
+function add(a, b){
+  return a + b
+}
+
+add.apply(null, [2, 3]) // 5
+
+var add2 = add.bind(null, 2)
+add2(3) //5
+```
+
+当然，这个函数没有使用this，所以就算绑定了全局对象也没所谓。不过如果某些函数（尤其是第三方库里面的函数）使用了this，那么很有可能就会把重名的全局对象修改了之类的。
+
+为了让函数安全地使用this，可以创建一个空对象，需要上下文参数占位的时候就把它传进去，这样就不会影响全局对象了。创建一个空对象最好的方法是Object.create(null)它和{}相比不会创建prototype这个委托（委托是什么），所以它比{}更空一点
+
+```js
+function add(a, b){
+  return a + b
+}
+
+var ø = Object.create(null)
+add.apply(ø, [2,3]) // 5
+var add2 = add.bind(ø, 2)
+add2(3) // 5
+```
+
+书上建议使用option+o组合键打出的ø符号（表示空集的那个符号）作为空对象
+
+## 软绑定
+
+硬绑定可以把this强制绑定到指定的上下文，但是之后就没办法用隐式或者显式绑定修改了。给默认绑定指定一个全局对象或undefined以外的上下文，就能实现和硬绑定相似的效果，同时保留隐式绑定和显式绑定修改this的能力，这就是软绑定：
+
+```js
+if(!Function.prototype.softBind){
+  Function.prototype.softBind = function(obj){
+    var fn = this
+    // 因为是在一个函数上调用这个方法，所以fn（this）就是那个函数
+    var curried = [].slice.call(arguments, 1)
+    var bound = function(){
+      return fn.apply(
+        (!this||this===(window||global))?
+        obj: this,
+        curried.concat([...arguments])
+       )
+    }
+    bound.prototype = Object.create(fn.prototype)
+    return bound
+  }
+}
+```
+
+原本书里的代码有点小问题，不仅掉了一个逗号，而且在
+
+curried.concat([...arguments]) 这句使用的是 
+
+curried.concat.apply(curried, arguments) 因为需要合并柯里化的那部分参数和实际调用时传入的参数，而第二次传入的参数arguments不是数组，所以这样迂回了一下（因为apply可以使用类数组作为参数）
+
+不过现在有了扩展运算符，直接把arguments变成数组就行了。
+
+这段代码主要的逻辑就是闭包，返回一个被软绑定的函数，判断这个函数的this是不是undefined或者全局环境 !this||this===(window||global)) 如果是就应该舍弃这个this，转而为fn绑定传入的上下文对象obj
+
+同时softBind还提供了柯里化功能（和原生bind一样），收集softBind时传入的额外参数，并在闭包内将这部分参数和实际调用时传入的参数合并。
+
+如果还有问题，看看[一篇不错的解析](https://segmentfault.com/q/1010000006223479) 👀 
+
+## 箭头函数词法
+
+根据外层函数或者全局作用域来决定this。箭头函数可以像bind一样确保this被绑定到词法环境里，它取代的是es6之前被使用的词法作用域方式：
+
+```js
+function foo(){
+  var self = this;
+  setTimeout(function(){
+    console.log(self.a)
+  },100)
+}
+```
+
+确保代码风格一致是十分重要的，在同一个函数或程序中，以下两种编码方式最好只居其一：
+
+1. 只使用词法作用域及箭头函数
+2. 尽量避免self = this和箭头函数，转而使用bind
 
