@@ -7,12 +7,12 @@ function newInstanceOf (leftValue, rightValue) {
     }
     
     let rightProto = rightValue.prototype;
-    let proto = Object.getPrototypeOf(leftValue);
+    let leftValue = Object.getPrototypeOf(leftValue);
     
     while (true) {
         if (leftValue === null) return false;
         if (leftValue === rightProto) return true;
-        proto = Object.getPrototypeOf(proto);
+        leftValue = Object.getPrototypeOf(leftValue);
     }
 }
 ```
