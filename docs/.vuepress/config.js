@@ -4,6 +4,65 @@ module.exports = {
   description: "我悲痛欲绝，跳进了家门口的井里",
   themeConfig: {
     sidebar: [
+
+      {
+        title: 'ES6',
+        children:[
+          '/Fe/es6/map',
+          '/Fe/es6/set',
+          '/Fe/es6/promise',
+          '/Fe/es6/reflect',
+          '/Fe/es6/遍历器',
+          '/Fe/es6/生成器',
+          '/Fe/es6/箭头函数',
+          '/Fe/es6/手promise'
+        ]
+      },
+      {
+        title: "React",
+        children: [
+          '/Fe/react/scheduler',
+          '/Fe/react/调和',
+          "/Fe/react/asd",
+          "/Fe/react/类",
+          "/Fe/react/Symbol",
+          "/Fe/react/for"
+        ]
+      },
+      {
+        title: "Vue",
+        children: [
+            "/Fe/vue/计算属性和侦听器",
+            "/Fe/vue/proxy",
+            "/Fe/vue/生命周期",
+            '/Fe/vue/数据可观察',
+            '/Fe/vue/依赖收集',
+            "/Fe/vue/关于mounted的bug",
+            "/Fe/vue/element事件绑定",
+            "/Fe/vue/分页展示"
+        ],
+      },
+      {
+        title: "基础",
+        children: [
+          '/base/tcp拥塞',
+          '/base/34',
+          '/base/http',
+          '/base/http缓存',
+          '/base/url',
+          '/base/get和post',
+          '/base/跨域',
+          '/base/sql'
+        ]
+      },
+      {
+        title:'引擎',
+        children:[
+          '/Fe/engine/事件循环',
+          '/Fe/engine/v8',
+          '/Fe/engine/上下文',
+        ]
+      },
       {
         title: "红宝书笔记",
         children: [
@@ -38,62 +97,6 @@ module.exports = {
             "/Fe/红宝书/22高级技巧",
             "/Fe/红宝书/22高级技巧2"
         ],
-      },
-      {
-        title: 'ES6',
-        children:[
-          '/Fe/es6/map',
-          '/Fe/es6/set',
-          '/Fe/es6/promise',
-          '/Fe/es6/reflect',
-          '/Fe/es6/遍历器',
-          '/Fe/es6/生成器',
-          '/Fe/es6/箭头函数',
-          '/Fe/es6/手promise'
-        ]
-      },
-      {
-        title: "React",
-        children: [
-          '/Fe/react/scheduler',
-          "/Fe/react/asd",
-          "/Fe/react/类",
-          "/Fe/react/Symbol",
-          "/Fe/react/for"
-        ]
-      },
-      {
-        title: "Vue",
-        children: [
-            "/Fe/vue/计算属性和侦听器",
-            "/Fe/vue/proxy",
-            "/Fe/vue/生命周期",
-            '/Fe/vue/数据可观察',
-            '/Fe/vue/依赖收集',
-            "/Fe/vue/关于mounted的bug",
-            "/Fe/vue/element事件绑定",
-            "/Fe/vue/分页展示"
-        ],
-      },
-      {
-        title: "基础",
-        children: [
-          '/base/tcp拥塞',
-          '/base/34',
-          '/base/http',
-          '/base/http缓存',
-          '/base/url',
-          '/base/get和post',
-          '/base/跨域'
-        ]
-      },
-      {
-        title:'引擎',
-        children:[
-          '/Fe/engine/事件循环',
-          '/Fe/engine/v8',
-          '/Fe/engine/上下文',
-        ]
       },
       {
         title: '我不知道的JS',
