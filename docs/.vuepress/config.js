@@ -55,6 +55,7 @@ module.exports = {
       {
         title: "React",
         children: [
+          '/Fe/react/scheduler',
           "/Fe/react/asd",
           "/Fe/react/类",
           "/Fe/react/Symbol",
