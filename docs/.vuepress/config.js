@@ -23,6 +23,7 @@ module.exports = {
         children: [
           '/Fe/react/scheduler',
           '/Fe/react/调和',
+          '/Fe/react/react哲学',
           "/Fe/react/asd",
           "/Fe/react/类",
           "/Fe/react/Symbol",
