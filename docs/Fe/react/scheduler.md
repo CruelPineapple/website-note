@@ -246,6 +246,7 @@ function unstable_scheduleCallback(priorityLevel, callback, options) {
 
     // 如果 taskQueue 是空的, 并且当前任务优先级最高
     // 那么这个任务就应该优先被设为 isHostTimeoutScheduled
+    // 我对isHostTimeoutScheduled的理解就是，表示现在有没有任务被安排延迟进入任务队列
     if (peek(taskQueue) === null && newTask === peek(timerQueue)) {
       // 如果超时调度已经在执行了, 就取消掉（防止被执行多次）
       // 因为当前这个任务是最高优的, 需要先处理当前这个任务
