@@ -24,6 +24,7 @@ module.exports = {
           '/Fe/react/scheduler',
           '/Fe/react/调和',
           '/Fe/react/react哲学',
+          '/Fe/react/hook-asd',
           "/Fe/react/asd",
           "/Fe/react/类",
           "/Fe/react/Symbol",
@@ -38,6 +39,7 @@ module.exports = {
             "/Fe/vue/生命周期",
             '/Fe/vue/数据可观察',
             '/Fe/vue/依赖收集',
+            '/Fe/vue/组合式api',
             "/Fe/vue/关于mounted的bug",
             "/Fe/vue/element事件绑定",
             "/Fe/vue/分页展示"
