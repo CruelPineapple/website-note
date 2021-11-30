@@ -22,6 +22,7 @@ module.exports = {
         title: "React",
         children: [
           '/Fe/react/scheduler',
+          '/Fe/react/fiber',
           '/Fe/react/调和',
           '/Fe/react/react哲学',
           '/Fe/react/hook-asd',
