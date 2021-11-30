@@ -139,6 +139,7 @@ module.exports = {
             '/lc/数组扁平化',
             '/lc/深浅拷贝',
             '/lc/bind和new',
+            '/lc/柯里化',
             '/lc/instanceof',
             '/lc/promiseAll',
             '/lc/防抖节流',
