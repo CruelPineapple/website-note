@@ -76,11 +76,11 @@ fiber树的父节点只和第一个子节点通过child引用相连，同级兄�
 6. 检查剩余可用时间，如果有空就开始下一个工作节点的任务，否则等待主线程空闲
 7. 如果没有下一个工作节点，（此时已经返回了fiber树的根节点，wIP树构建完成）进入pendingCommit状态
 
-结束后，根结点的effect list就保存着完整的
+结束后，根结点的effect list就保存着完整的effect list fiber tree
 
 ## 双缓冲
 
-就是wIP树构造完毕，就会成为新的current fiber tree，旧的ctree就不再引用了（就会被回收）。这样复用了一整颗树
+就是wIP树构造完毕，就会成为新的current fiber tree，旧的current tree就不再引用了（被回收）。这样复用了一整颗树
 
 
 
