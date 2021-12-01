@@ -24,6 +24,7 @@ module.exports = {
           '/Fe/react/scheduler',
           '/Fe/react/fiber',
           '/Fe/react/调和',
+          '/Fe/react/diff',
           '/Fe/react/react哲学',
           '/Fe/react/hook-asd',
           "/Fe/react/asd",
