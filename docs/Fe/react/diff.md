@@ -89,5 +89,7 @@ react用最后一个没有移动的节点作为参考位置，这个位置的节
 
 与删除相反，oldFiber遍历结束了，但是newChildren还有剩的，那就为剩下的节点生成fiber节点，并连上sibling引用
 
+## Vue Diff
 
+vue在diff的过程中会调用patch将节点的更新同步至DOM，是一个边diff边更新的过程，它对于找到的差异不会在新旧vDOM上修改，而是直接修改DOM
 
