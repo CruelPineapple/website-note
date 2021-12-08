@@ -54,16 +54,3 @@ function myNew(obj, ...args){
 
 上面的代码就是这么干的，基于obj的原型创建一个新对象，把属性添加到新对象，同时获取obj的执行结果，如果obj有返回而且是个对象，那就把返回值作为结果返回，否则返回新建的对象。
 
-## 类数组转换
-
-### slice
-
-Array.prototype.slice.call(arguments)这么用，slice本来是切出一个浅拷贝副本的，可以用来将arguments转为数组
-
-## from
-
-Array.from()专门用于从类数组和可迭代对象创建新的浅拷贝数组实例的方法
-
-### 扩展运算符
-
-var args = [...arguments]
