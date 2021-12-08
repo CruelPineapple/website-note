@@ -10,6 +10,7 @@ module.exports = {
         children:[
           '/Fe/es6/map',
           '/Fe/es6/set',
+          '/Fe/es6/let',
           '/Fe/es6/promise',
           '/Fe/es6/reflect',
           '/Fe/es6/遍历器',
@@ -66,6 +67,7 @@ module.exports = {
           '/Fe/engine/事件循环',
           '/Fe/engine/v8',
           '/Fe/engine/上下文',
+          '/Fe/engine/gc'
         ]
       },
       {
@@ -134,6 +136,7 @@ module.exports = {
           title:"题",
           children:[
             '/lc/排序',
+            '/lc/result',
             '/lc/周期执行函数',
             '/lc/URL拆解',
             '/lc/HTTPheader',
@@ -146,6 +149,8 @@ module.exports = {
             '/lc/柯里化',
             '/lc/instanceof',
             '/lc/promiseAll',
+            '/lc/红绿灯',
+            '/lc/每秒打印数字',
             '/lc/防抖节流',
             '/lc/两数之和',
             '/lc/数组乱序',
