@@ -67,6 +67,7 @@ module.exports = {
           '/Fe/engine/事件循环',
           '/Fe/engine/v8',
           '/Fe/engine/上下文',
+          '/Fe/回流重绘',
           '/Fe/engine/gc'
         ]
       },
@@ -172,8 +173,7 @@ module.exports = {
         title: 'CSS',
         children:[
           '/Fe/css/三列布局',
-          '/Fe/css/display',
-          '/Fe/css/回流重绘'
+          '/Fe/css/display'
         ]
       },
       {
