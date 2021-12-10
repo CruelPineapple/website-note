@@ -153,6 +153,7 @@ module.exports = {
             '/lc/promiseAll',
             '/lc/红绿灯',
             '/lc/每秒打印数字',
+            '/lc/连续赋值',
             '/lc/防抖节流',
             '/lc/两数之和',
             '/lc/数组乱序',
@@ -171,7 +172,8 @@ module.exports = {
         title: 'CSS',
         children:[
           '/Fe/css/三列布局',
-          '/Fe/css/display'
+          '/Fe/css/display',
+          '/Fe/css/回流重绘'
         ]
       },
       {
