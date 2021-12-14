@@ -143,6 +143,7 @@ module.exports = {
             '/lc/HTTPheader',
             '/lc/数组转树',
             '/lc/字符串方法',
+            '/lc/竖式',
             '/lc/数组方法',
             '/lc/数组扁平化',
             '/lc/数组求和',
