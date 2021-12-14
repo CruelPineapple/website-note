@@ -4,6 +4,16 @@
 
 用来理解bind的实现
 
+最新优化，十分简洁：
+
+```js
+Function.prototype.myBind = function(thisArg, ...args){
+	return () => this.apply(thisArg, args)
+}
+```
+
+以前的：
+
 ```js
 Function.prototype.myBind = function(){
   const args = Array.prototype.slice.call(arguments)

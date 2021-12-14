@@ -637,3 +637,10 @@ workLoop在一个时间片内执行currentTask的callback，在开始执行的�
 
 workLoop的返回值是这样判断的：如果currentTask存在，说明任务被中断了，需要继续，就返回true。否则就去timerQueue里面找一个任务执行requestHostTimeout，并返回false
 
+## 和fiber
+
+所有fiber节点都在工作循环中进行处理，我认为workloop中的任务就是fiber任务，这也解释了为什么在最初认识scheduler的时候会疑惑为什么任务可以暂停和继续：fiber结构就是一个天然的任务列表，每个节点记录了自己的任务，对任务的引用其实就是对fiber节点的引用
+
+这个阶段的工作顺序就是fiber篇中描述的fiber树遍历顺序
+
+在工作结束后进入调和篇提到的提交阶段（commit）

@@ -4,6 +4,8 @@
 
 调和篇中提到，diff的过程发生在构建wIP tree的时候，接下来就详细看看
 
+补充，构建wIP树的过程就是render过程的一部分，构建新wIP树时先进行的对比当前fiber节点和新react Element的过程
+
 ## diff主体
 
 diff的核心函数是reconcileChildFibers，它接受这么几个参数：

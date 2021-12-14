@@ -70,6 +70,8 @@ p.then((res) => {
 })
 ```
 
+偶然在vscode里面练习了手写promise，发现它建议我把代码转换成class形式，简单来说就是创建一个myPromise的class，把原本myPromise函数的内容挪进构造器，再在class内部实现then方法即可
+
 ## 怎么写
 
 可以算是帮助理解了promise的工作过程。首先刚创建的promise是pending状态，设置value和reason对应传给resolve和reject的参数，设定resolve和reject两种状态的回调函数列表。这就是构造的时候需要干的事儿。
