@@ -116,7 +116,8 @@ module.exports = {
           '/Fe/不js/模块',
           '/Fe/不js/this',
           '/Fe/不js/作用域',
-          '/Fe/不js/查询'
+          '/Fe/不js/查询',
+          '/Fe/不js/typeof'
         ]
       },
       {
@@ -153,6 +154,7 @@ module.exports = {
             '/lc/bind和new',
             '/lc/柯里化',
             '/lc/instanceof',
+            '/lc/手写promise',
             '/lc/promiseAll',
             '/lc/红绿灯',
             '/lc/每秒打印数字',
@@ -177,7 +179,8 @@ module.exports = {
         title: 'CSS',
         children:[
           '/Fe/css/三列布局',
-          '/Fe/css/display'
+          '/Fe/css/display',
+          '/Fe/css/bfc'
         ]
       },
       {
