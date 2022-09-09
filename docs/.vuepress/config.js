@@ -139,6 +139,8 @@ module.exports = {
       {
           title:"题",
           children:[
+            '/lc/2两数相加',
+            '/lc/5最长回文子串',
             '/lc/排序',
             '/lc/result',
             '/lc/周期执行函数',
@@ -165,8 +167,7 @@ module.exports = {
             '/lc/数组乱序',
             '/lc/数组去重',
             '/lc/类型判断',
-            '/lc/日期格式化',
-            '/lc/2两数相加'
+            '/lc/日期格式化'
           ]
       },
       {
