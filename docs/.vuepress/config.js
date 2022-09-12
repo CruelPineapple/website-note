@@ -141,6 +141,7 @@ module.exports = {
           children:[
             '/lc/2两数相加',
             '/lc/5最长回文子串',
+            '/lc/10正则表达式匹配',
             '/lc/排序',
             '/lc/result',
             '/lc/周期执行函数',
